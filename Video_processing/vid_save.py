@@ -24,4 +24,4 @@ while True:
 
 cap.release()
 out.release()
-cv2.destr
+cv2.destroyAllWindows()
