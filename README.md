@@ -77,3 +77,6 @@ F) excel_sc_dt
 G) landmark
 H) atten_score
 I) avg_atten_score
+
+
+![Obama](https://github.com/user-attachments/assets/95cb48e9-3a77-47aa-967a-6bc202a104af)
