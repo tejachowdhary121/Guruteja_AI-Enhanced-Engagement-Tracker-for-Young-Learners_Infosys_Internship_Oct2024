@@ -12,109 +12,134 @@
 This function resizes two images to a specified pixel range and combines them both horizontally and vertically. The results are displayed in separate windows.
 
 - **Input:**
+- 
   ![Image 1](https://github.com/user-attachments/assets/def5004a-cd57-4a19-9721-ac6e9c2b1f39)
+  
   ![Image 2](https://github.com/user-attachments/assets/83b09ad4-d964-4f79-8cfd-0e287c180604)
 
 - **Output:**
+- 
   ![Concatenated Image](https://github.com/user-attachments/assets/5bfdbc56-7f86-4f11-8af8-a245bb72787a)
 
 #### B) `image_contour`
 This detects contours in a grayscale image using a binary threshold and `cv2.findContours()`. The contours are drawn onto the original image in green.
 
 - **Input:**
+- 
   ![Image 1](https://github.com/user-attachments/assets/a9a0bf8b-d49f-4544-83b2-c4928b3cadad)
 
 - **Output:**
+- 
   ![Contoured Image](https://github.com/user-attachments/assets/f358e843-f3a0-460d-89be-29415a6b6361)
 
 #### C) `image_crop`
 This function extracts a specific region of an image based on pixel range and displays the cropped section.
 
 - **Input:**
+- 
   ![Image 2](https://github.com/user-attachments/assets/73ac45ba-c582-41c4-bc64-bb676fb03ee6)
 
 - **Output:**
+- 
   ![Cropped Image](https://github.com/user-attachments/assets/869d7954-38cc-48c4-85d2-eb36f91a6dcc)
 
 #### D) `image_dilation & erosion`
 This function applies morphological operations, dilation and erosion, to enhance and reduce features in an image, respectively.
 
 - **Input:**
+- 
   ![Image 1](https://github.com/user-attachments/assets/56bac27b-1030-4214-bb4b-98410044474f)
 
 - **Output:**
+- 
   ![Dilated and Eroded Image](https://github.com/user-attachments/assets/7ad6f206-45bd-44c3-934a-f93257777c38)
 
 #### E) `image_edge_detection`
 This applies the Canny edge detection algorithm to detect edges in a grayscale image.
 
 - **Input:**
+- 
   ![Image 1](https://github.com/user-attachments/assets/f5396844-9c99-4fa8-8ffd-0b8bcfdbb126)
 
 - **Output:**
+- 
   ![Edge Detected Image](https://github.com/user-attachments/assets/979c708c-63e2-4fb2-bec0-24b87a9d8259)
 
 #### F) `image_histogram_equalization`
 This enhances the contrast of a grayscale image using histogram equalization.
 
 - **Input:**
+- 
   ![Image 2](https://github.com/user-attachments/assets/8c328a4b-f195-43b7-be73-4dd1163514e2)
 
 - **Output:**
+- 
   ![Histogram Equalized Image](https://github.com/user-attachments/assets/bc26db27-1cee-4a85-a7d5-8fce5286a190)
 
 #### G) `image_hsv`
 This converts a color image from the BGR color space to HSV.
 
 - **Input:**
+- 
   ![Image 2](https://github.com/user-attachments/assets/5479802e-f49e-4fa5-b71a-aadcd2e99669)
 
 - **Output:**
+- 
   ![HSV Image](https://github.com/user-attachments/assets/8f41752f-f210-4628-b18f-8104f28da96e)
 
 #### H) `image_morphological_transformation`
 This applies opening and closing morphological operations to a grayscale image to remove noise and fill gaps.
 
 - **Input:**
+- 
   ![Image 1](https://github.com/user-attachments/assets/fbb6e46f-8dfa-4e38-981e-3c856064fd8f)
 
 - **Output:**
+- 
   ![Morphologically Transformed Image](https://github.com/user-attachments/assets/3d8d9970-5f23-4848-afdc-ec744d9339b5)
 
 #### I) `image_resize`
 This resizes an image to specified dimensions.
 
 - **Input:**
+- 
   ![Image 1](https://github.com/user-attachments/assets/701c01c1-17fe-408e-b030-6113d813aa02)
 
 - **Output:**
+- 
   ![Resized Image](https://github.com/user-attachments/assets/fcb29fb6-e559-4b00-b56e-27c0667ea6dc)
 
 #### J) `image_rgb2gray`
 This converts a color image to grayscale.
 
 - **Input:**
+- 
   ![Image 2](https://github.com/user-attachments/assets/bb3ec4c2-fe8c-43fd-9d54-14ce6f897cef)
 
 - **Output:**
+- 
   ![Grayscale Image](https://github.com/user-attachments/assets/fcf4a4c2-bda8-48bf-b729-9db743544b74)
 
 #### K) `image_rotate`
 This rotates an image by 90 degrees around its center.
 
 - **Input:**
+- 
   ![Image 2](https://github.com/user-attachments/assets/ff931e78-37ad-40d6-a0df-67d37aa092af)
 
 - **Output:**
+- 
   ![Rotated Image](https://github.com/user-attachments/assets/35d20bb4-ab51-464d-bd1e-4d295f5c50c0)
 
 #### L) `image_blur`
 This applies a Gaussian blur to an image to reduce noise and detail.
 
 - **Input:**
+- 
   ![Image 1](https://github.com/user-attachments/assets/9052a6fe-fe8e-41f8-a078-6928d5ae0f32)
 
 - **Output:**
+- 
   ![Blurred Image](https://github.com/user-attachments/assets/a0cfade1-69db-48ae-a533-c7512a78e4cc)
 
 #### M) `image_noise_removal & closing_gaps`
