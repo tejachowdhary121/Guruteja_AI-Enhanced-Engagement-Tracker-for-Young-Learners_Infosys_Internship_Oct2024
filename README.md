@@ -181,11 +181,35 @@ This function captures live video from the webcam and displays it in real-time.
 #### A) `data_segregate`
 This function organizes images and their label files into matched and unmatched directories.
 
+- **Input:**
+
+![Screenshot 2024-11-13 174954](https://github.com/user-attachments/assets/828040b2-4b34-4355-b577-76b9beed0a9c)
+
+- **Output:**
+
+![Screenshot 2024-11-13 174816](https://github.com/user-attachments/assets/b46cc9cd-5c16-4df3-a950-4211bd1087e7)
+
 #### B) `label`
 This function draws bounding boxes on images based on annotations in the label files.
 
+- **Input:**
+
+![gun4](https://github.com/user-attachments/assets/ccba6a57-2506-4524-9c24-f384a5b248fa)
+
+- **Output:**
+
+![gun4](https://github.com/user-attachments/assets/71dba9a6-37ac-4bcd-aa4f-74e589bcfd09)
+
 #### C) `label_manipulate`
 This function updates class numbers in label files for object detection tasks.
+
+- **Input:**
+
+![Screenshot 2024-11-13 174620](https://github.com/user-attachments/assets/20cbc002-8864-42e5-9ad9-f64203421d26)
+
+- **Output:**
+
+![Screenshot 2024-11-13 174644](https://github.com/user-attachments/assets/1e71f3f6-cee9-45e7-bca6-eac2f35e6822)
 
 ## Face Recognition
 
@@ -199,11 +223,67 @@ This function updates class numbers in label files for object detection tasks.
 ### Developed Logics:
 
 #### A) `Face_recognition`
+This performs real-time face recognition to identify whether the person in live video frames a known image by comparing. His name is displayed if He/She is recognized; otherwise, "Not He/She" appears.
+
+- **Input:**
+
+![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+
+- **Output:**
+
+![Screenshot 2024-11-13 175926](https://github.com/user-attachments/assets/df8d9bf1-4805-4b31-8b40-c8b8d251cbec)
+
 #### B) `Attendence_save`
+Using a live video stream, this performs real-time face recognition to identify He/She. When He/She's face is recognized, his/her name is displayed on the video feed, and the recognition event is logged with the date and time in an Excel file. After every 5 recognitions, the current log is saved to an Excel file, and the recognition counter and DataFrame are reset.
+
+- **Input:**
+
+![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+
+- **Output:**
+
+![Screenshot 2024-11-13 175926](https://github.com/user-attachments/assets/df8d9bf1-4805-4b31-8b40-c8b8d251cbec)
+
+![Screenshot 2024-11-13 180336](https://github.com/user-attachments/assets/e7a4fb5d-3d86-49b2-928e-6b6c65dbf1ba)
+
 #### C) `test`
+
+- **Input:**
+
+- **Output:**
+
 #### D) `tools`
+
+- **Input:**
+
+- **Output:**
+
 #### E) `excel_sc`
+
+- **Input:**
+
+- **Output:**
+
 #### F) `excel_sc_dt`
+
+- **Input:**
+
+- **Output:**
+
 #### G) `landmark`
+
+- **Input:**
+
+- **Output:**
+
 #### H) `atten_score`
+
+- **Input:**
+
+- **Output:**
+
 #### I) `avg_atten_score`
+
+- **Input:**
+
+- **Output:**
