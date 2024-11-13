@@ -274,16 +274,42 @@ This performs real-time face recognition using the live camera feed to identify 
 
 
 #### E) `excel_sc`
+This is for face recognition with time-based logging looks well-structured and includes the logic to save screenshots and log attendance into an Excel file.
+
+1. **Efficiency**: Resizing frames to 640x480 is good for speed. You can reduce the size further if needed.
+2. **File Saving**: Screenshots are saved in `"Teja_screenshots(5)"`, and Excel is updated every 30 seconds.
+3. **Recognition Timings**: Logs every 30 seconds for the same person and logs every 5 minutes to avoid multiple entries in short time frames.
+4. **Error Handling**: Proper `try-except` block for handling errors.
+5. **Termination**: Exits when the 'q' key is pressed.
 
 - **Input:**
 
+![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+
 - **Output:**
+
+![Guru_Teja_2024-11-07_20-39-40](https://github.com/user-attachments/assets/ca7f31a4-4721-4de3-b346-7800de53c1c4)
+
+![Screenshot 2024-11-13 183551](https://github.com/user-attachments/assets/846db4c7-d488-4e64-b6be-f5e6aab5209f)
 
 #### F) `excel_sc_dt`
+This uses OpenCV and `face_recognition` to detect and recognize a specific face (His/Her's) from a webcam feed. Upon recognition, a screenshot is saved, and the attendance (name, date, time, screenshot path) is logged into an Excel file. The script processes every second frame, saves data every 30 seconds, and ensures attendance is only logged every 5 minutes for the same person. The attendance data is stored in a DataFrame and periodically exported to an Excel file.
+
+Key Features:
+- Real-time face detection and recognition
+- Saves screenshots with timestamp
+- Logs attendance to Excel every 30 seconds
+- Avoids multiple logs within a 5-minute interval for the same person
 
 - **Input:**
 
+![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+
 - **Output:**
+
+![Guru_Teja_2024-11-07_20-31-07](https://github.com/user-attachments/assets/967c8d9b-81f1-4ed1-bf0c-de2046ac778b)
+
+![Screenshot 2024-11-13 183611](https://github.com/user-attachments/assets/96d0afcd-ad2b-4904-86ad-67d03cdac268)
 
 #### G) `landmark`
 This code is a face recognition and attentiveness tracking system that operates in real time. Key functions include:
@@ -300,6 +326,7 @@ The system continues until you press 'q' to exit.
 ![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
 
 - **Output:**
+
 ![Guru Teja_2024-11-07_20-16-27](https://github.com/user-attachments/assets/20b1feef-0c90-4832-a128-45268391b394)
 
 ![Screenshot 2024-11-13 181911](https://github.com/user-attachments/assets/5de5e452-ba9d-4062-a23b-a02604d9ff3d)
@@ -326,7 +353,22 @@ Exits on 'q' press, ensuring the final save to Excel.
 ![Screenshot 2024-11-13 182336](https://github.com/user-attachments/assets/45034df8-9044-4850-b471-ba579c1a942a)
 
 #### I) `avg_atten_score`
+This captures webcam video, performs face recognition for "His/Her's face," calculates attentiveness based on the head pose, and logs the data into an Excel file every 30 seconds. Here is a summary of its key actions:
+
+1. **Face Recognition**: Uses `face_recognition` to identify "His/Her's face" by comparing face encodings.
+2. **Head Pose Detection**: Calculates the head pose (yaw, pitch) using `dlib`'s facial landmark predictor to assess attentiveness.
+3. **Attentiveness Calculation**: Computes an attentiveness score based on yaw and pitch, with values between 0 (not attentive) and 1 (fully attentive).
+4. **Logging**: Every 30 seconds, the script saves recognized face data (name, date, time, attentiveness, attention score, and screenshot) into an Excel file.
+5. **Display and Feedback**: Shows real-time video with facial landmarks, attentiveness status, and face bounding boxes.
+
+The final output includes an Excel file with logged details and an average attentiveness score at the end of the session. The user can stop the video stream by pressing 'q'.
 
 - **Input:**
 
+![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+
 - **Output:**
+
+![Guru Teja_2024-11-07_22-10-43](https://github.com/user-attachments/assets/ace6a953-372a-4297-b598-3aa79f8ef4f3)
+
+![Screenshot 2024-11-13 183057](https://github.com/user-attachments/assets/ad3ba39e-0b64-42f7-836a-2e0f3cacc442)
