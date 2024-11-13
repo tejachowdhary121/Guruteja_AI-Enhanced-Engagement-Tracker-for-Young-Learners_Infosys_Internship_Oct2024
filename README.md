@@ -247,16 +247,31 @@ Using a live video stream, this performs real-time face recognition to identify 
 ![Screenshot 2024-11-13 180336](https://github.com/user-attachments/assets/e7a4fb5d-3d86-49b2-928e-6b6c65dbf1ba)
 
 #### C) `test`
+This performs real-time face recognition to identify He/She in a live video feed, logging each recognition event with the date and time into an Excel file every 30 seconds. It tracks recognition intervals to avoid duplicate entries and displays He/She or "Not He/She" based on identification.
 
 - **Input:**
 
+![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+
 - **Output:**
+
+![Screenshot 2024-11-13 175926](https://github.com/user-attachments/assets/df8d9bf1-4805-4b31-8b40-c8b8d251cbec)
+
+![Screenshot 2024-11-13 181026](https://github.com/user-attachments/assets/95c8a7ee-4008-426b-8869-0a978acda369)
 
 #### D) `tools`
+This performs real-time face recognition using the live camera feed to identify He/She. Each time a face is recognized, it records the name, date, and time in a data frame. Once a recognition count of 5 is reached, it saves the records to an Excel file, then resets the counter and DataFrame. It displays "He/She's name" or "Not He/She's name" over the video feed, and pressing 'q' exits the program with a final save of any remaining records.
 
 - **Input:**
 
+![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+
 - **Output:**
+
+![Screenshot 2024-11-13 175926](https://github.com/user-attachments/assets/df8d9bf1-4805-4b31-8b40-c8b8d251cbec)
+
+![Screenshot 2024-11-13 181459](https://github.com/user-attachments/assets/dcf0f639-e3a6-43fe-8ef0-e32741429a6c)
+
 
 #### E) `excel_sc`
 
@@ -271,16 +286,44 @@ Using a live video stream, this performs real-time face recognition to identify 
 - **Output:**
 
 #### G) `landmark`
+This code is a face recognition and attentiveness tracking system that operates in real time. Key functions include:
+
+1. **Face Recognition**: Detects and recognizes "His/Her's face" from the camera using a pre-loaded image.
+2. **Attentiveness Detection**: Uses facial landmarks and head pose estimation to assess if the subject is attentive.
+3. **Logging**: Records each recognition event with a timestamp, attentiveness status, and screenshot in an Excel file, saving every 30 seconds.
+4. **Live Feedback**: Displays "Attentive" or "Not Attentive" on the video feed along with facial landmarks.
+
+The system continues until you press 'q' to exit.
 
 - **Input:**
 
+![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+
 - **Output:**
+![Guru Teja_2024-11-07_20-16-27](https://github.com/user-attachments/assets/20b1feef-0c90-4832-a128-45268391b394)
+
+![Screenshot 2024-11-13 181911](https://github.com/user-attachments/assets/5de5e452-ba9d-4062-a23b-a02604d9ff3d)
 
 #### H) `atten_score`
+This script captures real-time webcam video to recognize "His/Her's face" and assess attentiveness based on head pose:
+
+1. **Setup**: Loads His/Her's face data and initializes detectors.
+2. **Face Recognition**: Compares detected faces with the known face, identifying if it's a match.
+3. **Attentiveness Check**: Estimates head orientation (yaw/pitch) to compute an attentiveness score.
+4. **Logging**: Logs details (name, date, time, attentiveness, screenshot) in an Excel file every 30 seconds if attentive.
+5. **Display**: Shows video with face labels, attentiveness status, and facial landmarks. 
+
+Exits on 'q' press, ensuring the final save to Excel.
 
 - **Input:**
 
+![teja](https://github.com/user-attachments/assets/8cd23fad-89bb-4962-bc21-930acb518fd0)
+
 - **Output:**
+
+![Guru Teja_2024-11-07_21-34-50](https://github.com/user-attachments/assets/40f12cd5-c468-459c-a610-395366915ff8)
+
+![Screenshot 2024-11-13 182336](https://github.com/user-attachments/assets/45034df8-9044-4850-b471-ba579c1a942a)
 
 #### I) `avg_atten_score`
 
